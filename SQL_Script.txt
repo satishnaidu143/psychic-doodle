@@ -1,0 +1,21 @@
+SQL>  create table touristplaces(attractionid number(10) primary key, attractionname varchar2(20) not null,
+  2   state varchar2(20),
+  3   attractiontype varchar2(20),
+  4   timetovisit varchar2(20),
+  5   nearhotel varchar2(20));
+
+Table created.
+
+SQL> desc touristplaces;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ATTRACTIONID                              NOT NULL NUMBER(10)
+ ATTRACTIONNAME                            NOT NULL VARCHAR2(20)
+ STATE                                              VARCHAR2(20)
+ ATTRACTIONTYPE                                     VARCHAR2(20)
+ TIMETOVISIT                                        VARCHAR2(20)
+ NEARHOTEL                                          VARCHAR2(20)
+ 
+ 
+SQL> create sequence attractionid start with 505 increment by 5;
+ 
